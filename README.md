@@ -178,31 +178,18 @@ set VITE_API_BASE_URL=http://127.0.0.1:8000/api
 }
 ```
 
-## Kullanilan Kutuphaneler ve Ne Ise Yaradiklari
+## Kullanilan En Onemli 10 Kutuphane
 
-### Backend (Python)
-
-- `fastapi`: REST API endpoint'lerini hizli sekilde olusturmak icin kullanilir (`/api/health`, `/api/urunler`).
-- `uvicorn[standard]`: FastAPI uygulamasini ASGI sunucusu olarak calistirir.
-- `selenium`: Tarayiciyi otomasyonla acip Trendyol sayfasindan veri cekmek icin kullanilir.
-- `webdriver-manager`: ChromeDriver surumunu otomatik indirip yonetir.
-- `schedule`: Scraper'i belirli saatlerde tetikleyen zamanlayici gorevleri icin kullanilir.
-- `sqlite3` (Python stdlib): Harici servis gerekmeden yerel veritabani kayitlari icin kullanilir.
-- `re` (Python stdlib, regular expression): Metin ayristirma icin kullanilir.
-  - Bu projede `Urun Adi [Satici]` formatini parcalamak ve urun/satici ayristirmasi yapmak icin faydalidir.
-- `datetime` (Python stdlib): Kayitlara zaman damgasi eklemek icin kullanilir.
-- `contextlib` (Python stdlib): Baglanti/uygulama omru gibi kaynak yonetimlerini temiz yapmak icin kullanilir.
-- `pathlib` (Python stdlib): Dosya yollarini platformdan bagimsiz sekilde yonetir.
-- `typing` (Python stdlib): Fonksiyon tip ipuclari ile kod okunabilirligini artirir.
-
-### Frontend (JavaScript)
-
-- `react`: Bilesen tabanli kullanici arayuzunu olusturur.
-- `react-dom`: React bilesenlerini tarayici DOM'una render eder.
-- `axios`: Backend API'ye HTTP istekleri atmak icin kullanilir.
-- `recharts`: Fiyat gecmisini cizgi grafik olarak gostermek icin kullanilir.
-- `vite`: Frontend gelistirme sunucusu ve hizli build altyapisini saglar.
-- `@vitejs/plugin-react`: Vite icinde React/JSX derleme destegini verir.
+1. `fastapi`: Backend tarafinda REST API endpoint'lerini olusturur (`/api/health`, `/api/urunler`).
+2. `uvicorn[standard]`: FastAPI uygulamasini ASGI sunucusu olarak calistirir.
+3. `selenium`: Trendyol urun sayfalarini tarayici otomasyonu ile acip veri toplamayi saglar.
+4. `webdriver-manager`: ChromeDriver kurulum/surum yonetimini otomatik yapar.
+5. `schedule`: Scraper gorevlerini belirli saatlerde calistirmak icin zamanlama yapar.
+6. `react`: Frontend'de bilesen tabanli arayuz yapisini kurar.
+7. `react-dom`: React bilesenlerini tarayici DOM'una render eder.
+8. `axios`: Frontend'den backend API'ye HTTP istekleri gonderir.
+9. `recharts`: Fiyat gecmisini cizgi grafik olarak gorsellestirir.
+10. `vite`: Frontend gelistirme sunucusu ve hizli build altyapisini saglar.
 
 ## Dosya Aciklamalari
 
