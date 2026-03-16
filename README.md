@@ -6,6 +6,12 @@ Bu proje, Trendyol uzerindeki urunlerin fiyat gecmisini **satici bazli** olarak 
 
 ![Proje ekran goruntusu](screenshoots/image.png)
 
+## Kisa Demo
+
+Asagidaki goruntu, satici bazli secim ve fiyat panelinin calisma gorunumunu gosterir:
+
+![Kisa demo goruntusu](screenshoots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-03-16%20143933.png)
+
 ## Proje Mimarisi
 
 ```text
