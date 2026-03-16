@@ -12,6 +12,31 @@ Asagidaki goruntu, satici bazli secim ve fiyat panelinin calisma gorunumunu gost
 
 ![Kisa demo goruntusu](screenshoots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-03-16%20143933.png)
 
+## 1 Dakikada Kurulum
+
+Asagidaki adimlar ile projeyi hizli sekilde ayaga kaldirabilirsin:
+
+```bash
+# 1) Backend
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python database.py
+python scraper.py
+uvicorn api:app --reload --host 127.0.0.1 --port 8000
+```
+
+```bash
+# 2) Yeni terminal acip frontend
+cd frontend
+npm install
+npm run dev
+```
+
+Panel: `http://127.0.0.1:5173`
+API: `http://127.0.0.1:8000/api/urunler`
+
 ## Proje Mimarisi
 
 ```text
